@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { formElement } from './component/Formio';
+import { formioComponent } from './component/Form';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <formElement></formElement>
+      <formioComponent></formioComponent>
     </div>
   );
 }

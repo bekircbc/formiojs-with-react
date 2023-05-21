@@ -1,8 +1,8 @@
-import Formio from 'formiojs';
+import {Formio} from 'formiojs';
 
 let formio = new Formio('https://examples.form.io/example');
 
-formio.loadForm((form) => {
+export const formioComponent = formio.loadForm((form) => {
   console.log(form);
   formio.saveSubmission({data: {
     firstName: 'Joe',

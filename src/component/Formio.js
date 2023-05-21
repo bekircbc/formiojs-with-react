@@ -1,5 +1,6 @@
-import Formio from 'formiojs';
-Formio.createForm(document.getElementById('formio'), {
+import {Formio} from 'formiojs';
+
+export const formElement = Formio.createForm(document.getElementById('formio'), {
     components: [
       {
         type: 'textfield',
